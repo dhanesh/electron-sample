@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div>
+      <div style="text-align:center;">
+        <input type="text" placeholder="Please select a file" id="actual-file" disabled="disabled"/>
+        <input type="button" value="Choose a file" id="select-file"/>
+      </div>
+      <br><br>
+      <textarea id="content-editor" rows="5"></textarea><br><br>
+      <input type="button" id="save-changes" value="Save changes"/>
+      <input type="button" id="delete-file" value="Delete file"/>
+    </div>
+    <hr>
+    <div style="text-align:center;">
+      <p>
+        The file content will be the same as the editor.
+      </p>
+      <input type="button" value="Choose a file" id="create-new-file"/>
+    </div>
+    <script type="text/javascript" src="js/bundle.js"></script>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
